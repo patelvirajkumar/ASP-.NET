@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MobileShopping.master.cs" Inherits="VirajPatel_FinalProject.MobileShopping" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Electronics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/stylesheet.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+      <div class="container">
+    <header class="jumbotron">
+        
+
+        <h1>&nbsp;<asp:ImageButton ID="ImageButton1" ImageUrl="~/Images/Logo/Logo.jpg" runat="server" Height="70px" Width="85px" />
+            Electronics</h1>
+        <h2>&nbsp;&nbsp;Mobile at genuine rate</h2>
+    </header>
+          </div>
+
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu-bar">
+                <div class="container-fluid">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="mainMenu">
+                        <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                <asp:HyperLink CssClass="nav-link menu-item" runat="server" NavigateUrl="~/Home">Home</asp:HyperLink>
+                            </li>
+                            <li class="nav-item dropdown" ID="cus_support" runat="server">
+                                <a class="nav-link dropdown-toggle menu-item" data-toggle="dropdown"> Company</a>
+                                <ul class="dropdown-menu">
+                              
+                                <li><asp:HyperLink CssClass="dropdown-item" runat="server" NavigateUrl="~/Company_Pages/Apple">Apple</asp:HyperLink></li>
+                                <li><asp:HyperLink CssClass="dropdown-item" runat="server" NavigateUrl="~/Company_Pages/Samsung">Samsung</asp:HyperLink></li>
+                                <li><asp:HyperLink CssClass="dropdown-item" runat="server" NavigateUrl="~/Company_Pages/Blackberry">BlackBerry</asp:HyperLink></li>
+                                <li><asp:HyperLink CssClass="dropdown-item" runat="server" NavigateUrl="~/Company_Pages/Motorola">Motorola</asp:HyperLink></li>
+                                </ul>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <asp:HyperLink CssClass="nav-link menu-item" runat="server" NavigateUrl="~/MyCart">My Cart</asp:HyperLink>
+                            </li>
+                            <li class="nav-item">
+                                <asp:HyperLink CssClass="nav-link menu-item" runat="server" NavigateUrl="~/ContactUs">Contact Us</asp:HyperLink>
+                            </li>
+                           
+                         </ul>
+                    </div>
+                </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </form>
+    <div class="container">
+     <div class="jumbotron"> To contact us, call us at 800-555-0400 or email us at electronics@gmail.com.<br />
+          <a href="Home">Home</a>
+     </div>
+       
+</div>
+</body>
+</html>

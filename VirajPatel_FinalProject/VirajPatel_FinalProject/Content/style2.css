@@ -1,0 +1,60 @@
+﻿body
+{
+    background-image: url(../Images/Logo/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:450px;
+}
+.auto-style1 {
+    
+    text-align: center;
+    color:white;
+    font-size:30px;
+}
+h1{
+    color: white;
+    font-size:80px;
+    text-align:center;
+}
+h2 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+#Button1{
+  color:red;
+  width:300px;
+  height:40px;
+  margin-left:200px;
+        
+}
+#btnLogin {
+    color: red;
+    width: 300px;
+    height: 40px;
+    margin-left: 800px;
+}
+.auto-style1 a:link {
+    color: white;
+}
+.auto-style1 a:visited
+{
+    color:lightblue;
+}
+#HyperLink 
+{
+   margin-left:900px;
+  
+}
+    #HyperLink a:link {
+        border-color: white;
+        border-width: 5px;
+    }
+
+#regId {
+    color: red;
+    width: 300px;
+    height: 40px;
+    margin-left: 800px;
+}
